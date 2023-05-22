@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'EB Garamond', serif;
+}
+
+.img {
+
+    background-size: 100% 100%;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.img-inner {
+    position: absolute;
+    bottom: -200px;
+    top: 250px;
+    color: white;
+    background-color: #0000005f;
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    transition: all 0.8s ease 0s;
+
+}
+
+.img:hover .img-inner {
+    bottom: 0;
+    top: 0;
+}
+
+.img-wrapper:nth-child(1)>.img {
+    background-image: url('../icons/gallery-1.jpg');
+
+}
+
+.img-wrapper:nth-child(2)>.img {
+    background-image: url('../icons/gallery-2.jpg');
+
+}
+
+.img-wrapper:nth-child(3)>.img {
+    background-image: url('../icons/gallery-3.jpg');
+
+}
+
+.img-wrapper:nth-child(4)>.img {
+    background-image: url('../icons/gallery-4.jpg');
+
+}
+
+.one {
+    border-right: 1px solid #c4c8cb;
+    border-bottom: 1px solid #c4c8cb;
+}
+
+.two {
+    border-right: 1px solid #c4c8cb;
+    border-bottom: 1px solid #c4c8cb;
+}
+
+.three {
+    border-bottom: 1px solid #c4c8cb;
+}
+
+.five {
+    border-right: 1px solid #c4c8cb;
+    border-left: 1px solid #c4c8cb;
+}
+
+
+footer img {
+    width: 20px;
+    height: 20px;
+    color: blue;
+
+
+}
+
+footer a:hover {
+    background-color: lightgrey;
+}
+
+footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    transition: all 0.8s ease 0s;
+
+}
+
+@media screen and (max-width:992px) {
+    body {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .one {
+        border: none;
+        border-bottom: 1px solid #c4c8cb;
+    }
+
+    .two {
+        border: none;
+        border-bottom: 1px solid #c4c8cb;
+    }
+
+    .four {
+        border-bottom: 1px solid #c4c8cb;
+    }
+
+    .five {
+        border: none;
+        border-bottom: 1px solid #c4c8cb;
+    }
+
+    .six {
+        border-bottom: 1px solid #c4c8cb;
+    }
+
+}
