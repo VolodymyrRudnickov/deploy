@@ -8,23 +8,19 @@ body {
 .gallery {
     position: relative;
 }
-.gallery:hover:before{
-    content:'';
-    background-image:url('../icons/arrow-left.svg');
-    background-repeat:no-repeat;
+.arrow-left {
+    display: none;
     cursor: pointer;
     width: 50px;
     height: 50px;
     position: absolute;
     top: 45%;
-    left: 50px;
+    left: 15px;
     z-index: 2;
-    transition: all 0.8s ease 0s;
+    
 }
-.gallery:hover:after{
-    content:'';
-    background-image:url('../icons/arrow-right.svg');
-    background-repeat:no-repeat;
+.arrow-right {
+    display: none;
     cursor: pointer;
     width: 50px;
     height: 50px;
@@ -32,11 +28,19 @@ body {
     top: 45%;
     right: 25px;
     z-index: 2;
-    transition: all 0.8s ease 0s;
+    
+    
 }
+.gallery:hover .arrow-left {
+    display: block;
+
+}
+.gallery:hover .arrow-right {
+    display: block;
+}
+
 .img {
     background-size: 100% 100%;
-    width: 250px;
     height: 250px;
     position: relative;
     overflow: hidden;
@@ -64,22 +68,22 @@ body {
     top: 0;
 }
 
-.img-wrapper:nth-child(1)>.img {
+.img-wrapper:nth-child(3)>.img {
     background-image: url('../icons/gallery-1.jpg');
 
 }
 
-.img-wrapper:nth-child(2)>.img {
+.img-wrapper:nth-child(4)>.img {
     background-image: url('../icons/gallery-2.jpg');
 
 }
 
-.img-wrapper:nth-child(3)>.img {
+.img-wrapper:nth-child(5)>.img {
     background-image: url('../icons/gallery-3.jpg');
 
 }
 
-.img-wrapper:nth-child(4)>.img {
+.img-wrapper:nth-child(6)>.img {
     background-image: url('../icons/gallery-4.jpg');
 
 }
