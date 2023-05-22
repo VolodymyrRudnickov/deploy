@@ -5,9 +5,36 @@
 body {
     font-family: 'EB Garamond', serif;
 }
-
+.gallery {
+    position: relative;
+}
+.gallery:hover:before{
+    content:'';
+    background-image:url('../icons/arrow-left.svg');
+    background-repeat:no-repeat;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 45%;
+    left: 50px;
+    z-index: 2;
+    transition: all 0.8s ease 0s;
+}
+.gallery:hover:after{
+    content:'';
+    background-image:url('../icons/arrow-right.svg');
+    background-repeat:no-repeat;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 45%;
+    right: 25px;
+    z-index: 2;
+    transition: all 0.8s ease 0s;
+}
 .img {
-
     background-size: 100% 100%;
     width: 250px;
     height: 250px;
